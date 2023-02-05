@@ -1,0 +1,147 @@
+.wd-bg-color-lightgray {
+    background-color: lightgray;
+}
+.wd-bg-color-gray {
+    background-color: rgb(110, 118, 125);
+}
+.wd-bg-color-darkgray1 {
+    background-color: rgb(47, 51, 54);
+}
+.wd-bg-color-darkgray2 {
+    background-color: rgb(34,35,39);
+}
+.wd-bg-color-darkgray3 {
+    background-color: rgb(23,24,30);
+}
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+.wd-fg-color-gray {
+    color: rgb(110, 118, 125);
+}
+.wd-fg-color-red {
+    color: #e2255f;
+}
+.wd-fg-color-blue {
+    color: rgb(29, 161, 242);
+}
+
+.wd-flex-container {
+    display: flex;
+}
+.wd-flex-direction-column {
+    flex-direction: column;
+}
+.wd-flex-justify-center {
+    justify-content: center;
+}
+.wd-flex-justify-space-around {
+    justify-content: space-around;
+}
+.wd-flex-justify-space-between {
+    justify-content: space-between;
+}
+.wd-flex-align-center {
+    align-items: center;
+}
+.wd-flex-container-stretch {
+    flex-basis: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, serif;
+}
+
+.wd-font-13px {
+    font-size: 13px;
+}
+.wd-font-15px {
+    font-size: 15px;
+}
+.wd-font-20px {
+    font-size: 20px;
+}
+.wd-font-50px {
+    font-size: 50px;
+}
+.wd-font-bold {
+    font-weight: bold;
+}
+.wd-font-lighter {
+    font-weight: lighter;
+}
+.wd-font-normal {
+    font-weight: normal;
+}
+
+.wd-padding-12px {
+    padding: 12px;
+}
+.wd-padding-16px {
+    padding: 16px;
+}
+.wd-padding-left-12px {
+    padding-left: 12px;
+}
+.wd-padding-left-16px {
+    padding-left: 16px;
+}
+.wd-padding-left-60px {
+    padding-left: 60px;
+}
+.wd-padding-right-12px {
+    padding-right: 12px;
+}
+.wd-padding-right-16px {
+    padding-right: 16px;
+}
+.wd-padding-top-12px {
+    padding-top: 12px;
+}
+.wd-padding-bottom-12px {
+    padding-bottom: 12px;
+}
+
+.wd-tuit-image {
+    width: 504px;
+    height: 264px;
+    overflow: hidden;
+}
+.wd-icon-link {
+    text-decoration: none;
+    color: rgb(110, 118, 125);
+}
+
+.wd-outline {
+    outline: rgb(110, 118, 125) solid 1px;
+}
+.wd-border-rounded-20px {
+    border-radius: 20px;
+}
+.wd-border-rounded-top-10px {
+    border-radius: 10px 10px 0 0;
+}
+.wd-border-rounded-bottom-10px {
+    border-radius: 0 0 10px 10px;
+}
+.wd-border-bottom-blue {
+    border-bottom: rgb(29, 161, 242) solid 5px;
+}
+.wd-border-darkgray {
+    border-color: rgb(47, 51, 54);
+}
+.wd-border-darkgray2 {
+    border-color: rgb(34,35,39);
+}
+
+.wd-max-width-506px {
+    max-width: 506px;
+}
+.wd-max-width-504px {
+    width: 504px;
+}
