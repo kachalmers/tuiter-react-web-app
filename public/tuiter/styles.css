@@ -30,33 +30,15 @@
     color: rgb(29, 161, 242);
 }
 
-.wd-flex-container {
-    display: flex;
+.wd-font-bold {
+    font-weight: bold;
 }
-.wd-flex-direction-column {
-    flex-direction: column;
+.wd-font-lighter {
+    font-weight: lighter;
 }
-.wd-flex-justify-center {
-    justify-content: center;
+.wd-font-normal {
+    font-weight: normal;
 }
-.wd-flex-justify-space-around {
-    justify-content: space-around;
-}
-.wd-flex-justify-space-between {
-    justify-content: space-between;
-}
-.wd-flex-align-center {
-    align-items: center;
-}
-.wd-flex-container-stretch {
-    flex-basis: 100%;
-}
-
-body {
-    margin: 0;
-    font-family: Helvetica, serif;
-}
-
 .wd-font-13px {
     font-size: 13px;
 }
@@ -69,14 +51,32 @@ body {
 .wd-font-50px {
     font-size: 50px;
 }
-.wd-font-bold {
-    font-weight: bold;
+
+.wd-flex-container {
+    display: flex;
 }
-.wd-font-lighter {
-    font-weight: lighter;
+.wd-flex-direction-column {
+    flex-direction: column;
 }
-.wd-font-normal {
-    font-weight: normal;
+.wd-flex-justify-center {
+    justify-content: center;
+}
+.wd-flex-justify-space-between {
+    justify-content: space-between;
+}
+.wd-flex-justify-space-around {
+    justify-content: space-around;
+}
+.wd-flex-align-center {
+    align-items: center;
+}
+.wd-flex-container-stretch {
+    flex-basis: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, serif;
 }
 
 .wd-padding-12px {
@@ -94,14 +94,14 @@ body {
 .wd-padding-left-60px {
     padding-left: 60px;
 }
+.wd-padding-top-12px {
+    padding-top: 12px;
+}
 .wd-padding-right-12px {
     padding-right: 12px;
 }
 .wd-padding-right-16px {
     padding-right: 16px;
-}
-.wd-padding-top-12px {
-    padding-top: 12px;
 }
 .wd-padding-bottom-12px {
     padding-bottom: 12px;
@@ -112,9 +112,9 @@ body {
     height: 264px;
     overflow: hidden;
 }
-.wd-icon-link {
-    text-decoration: none;
+.wd-icon-hyperlink {
     color: rgb(110, 118, 125);
+    text-decoration: none;
 }
 
 .wd-outline {
