@@ -11,3 +11,6 @@
     height: 100px;
     overflow: hidden;
 }
+.wd-explore-tab-hyperlink {
+    text-decoration: none;
+}
