@@ -63,6 +63,9 @@
     bottom:0;
     left:12px;
 }
+.wd-padding-left-0px {
+    padding-left:0px;
+}
 .wd-padding-top-bottom-6px {
     padding-top:6px;
     padding-bottom:6px;

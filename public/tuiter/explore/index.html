@@ -13,11 +13,11 @@
           rel="stylesheet"/>
 </head>
 <body>
-<div class="container wd-padding-top-12px wd-padding-bottom-12px">
+<div class="container pt-3 pb-3">
     <div class="row">
         <!-- Left sidebar -->
         <div class="col-2">
-            <ul class="list-group wd-padding-bottom-12px">
+            <ul class="list-group pb-2">
                 <li class="list-group-item"><i class="fab fa-twitter"></i></li>
                 <a href="../home.html" class="list-group-item list-group-item-action"><i class="fas fa-home"></i> Home</a>
                 <a href="#" class="list-group-item list-group-item-action active"><i class="fas fa-hashtag"></i> Explore</a>
@@ -37,17 +37,19 @@
         </div>
         <!-- Main content -->
         <div class="col-6">
-            <!-- Search bar and -->
-            <div class="row wd-flex-container-align-center wd-padding-bottom-8px">
-                <div class="col-11 wd-pos-rel">
+            <!-- Search bar and Explore settings cog-->
+            <div class="d-flex align-items-center justify-content-between pb-2 position-relative">
+                <div class="position-absolute">
                     <!-- Search icon -->
-                    <i class="fas fa-search wd-search-icon"></i>
+                    <i class="fas fa-search wd-fg-color-gray ps-3 pb-2"></i>
+                </div>
+                <div class="flex-fill pe-4">
                     <!-- Search bar -->
                     <input type="text"
-                           class="form-control wd-pill wd-padding-left-60px"
+                           class="form-control wd-pill ps-5"
                            placeholder="Search Tuiter">
                 </div>
-                <div class="col-1">
+                <div>
                     <a href="explore-settings.html"><i class="fas fa-cog text-primary wd-font-30px"></i></a>
                 </div>
             </div>
@@ -71,11 +73,11 @@
                 </li>
             </ul>
 
-            <div class="wd-flex-container wd-pos-rel wd-padding-top-8px">
+            <div class="d-flex position-relative pt-2">
                 <img class="wd-width-100pc"
                      src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
                      alt="Starship-Mk1-Day.jpg">
-                <div class="wd-pos-abs wd-bottom-left wd-fg-color-white wd-font-30px wd-font-bold">
+                <div class="position-absolute fixed-bottom px-2 wd-fg-color-white wd-font-30px wd-font-bold">
                     SpaceX's Starship
                 </div>
             </div>
@@ -90,7 +92,7 @@
                                 easy to build Single Page Applications or SPAs</b></div>
                         </div>
                         <div class="wd-width-120px">
-                            <img alt="Massachusetts image"
+                            <img alt="ReactJS logo"
                                  src="https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"
                                  class="wd-explore-image">
                         </div>
@@ -104,7 +106,7 @@
                             <div class="wd-fg-color-gray">123K Tuits</div>
                         </div>
                         <div class="wd-width-120px">
-                            <img alt="Massachusetts image"
+                            <img alt="JavaScript logo"
                                  src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
                                  class="wd-explore-image">
                         </div>
@@ -118,7 +120,7 @@
                             <div class="wd-fg-color-gray">123K Tuits</div>
                         </div>
                         <div class="wd-width-120px">
-                            <img alt="Massachusetts image"
+                            <img alt="jQuery logo"
                                  src="https://www.zdnet.com/a/img/resize/5ee60f19295247953acbfef1b5b7cc9fc8e49166/2019/04/21/9d791bf2-9b20-476a-bba6-201e622d2a1f/jquery-logo-blue.png?auto=webp&fit=crop&height=1200&width=1200"
                                  class="wd-explore-image">
                         </div>
@@ -132,7 +134,7 @@
                             <div class="wd-fg-color-gray">123K Tuits</div>
                         </div>
                         <div class="wd-width-120px">
-                            <img alt="Massachusetts image"
+                            <img alt="NodeJS logo"
                                  src="https://www.secret-source.eu/wp-content/uploads/2017/11/node-js-logo.jpg"
                                  class="wd-explore-image">
                         </div>
@@ -143,7 +145,7 @@
         <!-- Right sidebar -->
         <div class="col-4">
             <ul class="list-group wd-font-13px">
-                <li class="list-group-item wd-padding-top-bottom-6px"><b>Who to follow</b></li>
+                <li class="list-group-item top-6 bottom-6"><b>Who to follow</b></li>
                 <li class="list-group-item">
                     <div class="row">
                         <div class="wd-width-50px">
@@ -155,7 +157,7 @@
                             <b>Java </b><i class="fa fa-check-circle"></i>
                             <div>@Java</div>
                         </div>
-                        <div class="wd-width-85px wd-flex-container-align-center">
+                        <div class="wd-width-85px d-flex align-items-center">
                             <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
@@ -171,7 +173,7 @@
                             <b>Relativity Space </b><i class="fa fa-check-circle"></i>
                             <div>@relativityspace</div>
                         </div>
-                        <div class="wd-width-85px wd-flex-container-align-center">
+                        <div class="wd-width-85px d-flex align-items-center">
                             <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
@@ -187,7 +189,7 @@
                             <b>Virgin Galactic </b><i class="fa fa-check-circle"></i>
                             <div>@virgingalactic</div>
                         </div>
-                        <div class="wd-width-85px wd-flex-container-align-center">
+                        <div class="wd-width-85px d-flex align-items-center">
                             <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
@@ -203,7 +205,7 @@
                             <b>NASA </b><i class="fa fa-check-circle"></i>
                             <div>@NASA</div>
                         </div>
-                        <div class="wd-width-85px wd-flex-container-align-center">
+                        <div class="wd-width-85px d-flex align-items-center">
                             <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
@@ -219,7 +221,7 @@
                             <b>Tesla </b><i class="fa fa-check-circle"></i>
                             <div>@Tesla</div>
                         </div>
-                        <div class="wd-width-85px wd-flex-container-align-center">
+                        <div class="wd-width-85px d-flex align-items-center">
                             <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
