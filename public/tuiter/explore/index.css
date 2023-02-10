@@ -1,8 +1,8 @@
 .wd-explore-avatar {
     position: relative;
     border-radius: 50%;
-    height: 13px;
-    width: 13px;
+    height: 40px;
+    width: 40px;
     overflow: hidden;
 }
 .wd-explore-image {
@@ -11,6 +11,65 @@
     height: 100px;
     overflow: hidden;
 }
-.wd-explore-tab-hyperlink {
+.wd-width-50px {
+    width: 50px;
+}
+.wd-width-85px {
+    width: 85px;
+}
+.wd-width-120px {
+    width: 120px;
+}
+.wd-text-decoration-none {
     text-decoration: none;
+}
+.wd-fa-half {
+    font-size:0.5em;
+}
+.wd-pill {
+    border-radius: 30px;
+    width: 100%;
+}
+.wd-searchbar {
+    border-radius: 30px;
+    width: 100%;
+}
+.wd-font-30px {
+    font-size: 30px;
+}
+.wd-pos-abs {
+    position: absolute;
+}
+.wd-pos-rel {
+    position: relative;
+}
+.wd-left-30px {
+    left:30px;
+}
+.wd-flex-container-align-center {
+    display: flex;
+    align-items: center;
+}
+.wd-search-icon {
+    position: absolute;
+    left:30px;
+    top: 25%;
+    color: gray;
+}
+.wd-width-100pc {
+    width:100%;
+}
+.wd-bottom-left {
+    bottom:0;
+    left:12px;
+}
+.wd-padding-top-bottom-6px {
+    padding-top:6px;
+    padding-bottom:6px;
+}
+.wd-padding-bottom-8px {
+    padding-bottom:8px;
+}
+.wd-padding-top-8px {
+    padding-top:8px;
 }

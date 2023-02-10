@@ -3,103 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+          crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="index.css">
-    <link href= "https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
 </head>
-<body class="wd-bg-color-black">
-    <div class="wd-bg-color-black wd-padding-12px wd-padding-left-16px">
-        <div class="wd-flex-container wd-flex-direction-column">
-            <!-- Search, settings button, and menu -->
-            <div class="wd-flex-container wd-flex-direction-column wd-outline">
-
-                <div class="wd-flex-container wd-flex-justify-space-between wd-flex-align-center wd-padding-12px">
+<body>
+<div class="container wd-padding-top-12px wd-padding-bottom-12px">
+    <div class="row">
+        <!-- Left sidebar -->
+        <div class="col-2">
+            <ul class="list-group wd-padding-bottom-12px">
+                <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                <a href="../home.html" class="list-group-item list-group-item-action"><i class="fas fa-home"></i> Home</a>
+                <a href="#" class="list-group-item list-group-item-action active"><i class="fas fa-hashtag"></i> Explore</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-bell"></i> Notifications</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-envelope"></i> Messages</a>
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action"><i class="fas fa-bookmark"></i> Bookmarks</a>
+                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-list"></i> Lists</a>
+                <a href="../profile.html" class="list-group-item list-group-item-action"><i class="fas fa-user"></i> Profile</a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <span class="fa-stack wd-fa-half">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                    </span> More
+                </a>
+            </ul>
+            <button class="btn btn-primary wd-pill">Tuit</button>
+        </div>
+        <!-- Main content -->
+        <div class="col-6">
+            <!-- Search bar and -->
+            <div class="row wd-flex-container-align-center wd-padding-bottom-8px">
+                <div class="col-11 wd-pos-rel">
                     <!-- Search icon -->
-                    <i class="fas fa-search wd-fg-color-gray" style="position: relative; left: 40px"></i>
+                    <i class="fas fa-search wd-search-icon"></i>
                     <!-- Search bar -->
-                    <input class="wd-flex-container-stretch wd-border-rounded-20px wd-bg-color-darkgray2 wd-border-darkgray2 wd-fg-color-white wd-padding-12px wd-padding-left-60px wd-font-15px"
-                           type="text"
+                    <input type="text"
+                           class="form-control wd-pill wd-padding-left-60px"
                            placeholder="Search Tuiter">
-                    <!-- Explore settings cog -->
-                    <a href="explore-settings.html"><i class="fas fa-cog wd-fg-color-blue wd-padding-left-60px" style="font-size:24px;"></i></a>
                 </div>
-                <!-- Hyperlinks -->
-                <div class="wd-flex-container wd-flex-justify-space-around wd-font-15px wd-font-bold">
-                    <a href="#" class="wd-explore-tab-hyperlink wd-fg-color-blue wd-padding-16px wd-border-bottom-blue">For you</a>
-                    <a href="#" class="wd-explore-tab-hyperlink wd-fg-color-gray wd-padding-16px">Trending</a>
-                    <a href="#" class="wd-explore-tab-hyperlink wd-fg-color-gray wd-padding-16px">COVID-19</a>
-                    <a href="#" class="wd-explore-tab-hyperlink wd-fg-color-gray wd-padding-16px">News</a>
-                    <a href="#" class="wd-explore-tab-hyperlink wd-fg-color-gray wd-padding-16px">Sports</a>
-                    <a href="#" class="wd-explore-tab-hyperlink wd-fg-color-gray wd-padding-16px">Entertainment</a>
+                <div class="col-1">
+                    <a href="explore-settings.html"><i class="fas fa-cog text-primary wd-font-30px"></i></a>
                 </div>
             </div>
-            <!-- Divider -->
-            <div class="wd-padding-bottom-12px wd-outline wd-bg-color-darkgray3"></div>
-            <!-- Tuits -->
-            <div class="wd-flex-container wd-flex-direction-column wd-padding-12px wd-outline">
-                <div class="wd-flex-container wd-flex-justify-space-between wd-flex-align-center">
-                    <div class="wd-font-13px wd-fg-color-gray">Trending in Science</div>
-                    <i class="fa fa-ellipsis-h wd-fg-color-gray"></i>
+
+            <!-- Tabs -->
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="for-you.html">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+
+            <div class="wd-flex-container wd-pos-rel wd-padding-top-8px">
+                <img class="wd-width-100pc"
+                     src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
+                     alt="Starship-Mk1-Day.jpg">
+                <div class="wd-pos-abs wd-bottom-left wd-fg-color-white wd-font-30px wd-font-bold">
+                    SpaceX's Starship
                 </div>
-                <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px wd-font-bold">Starship</div>
-                <div class="wd-font-13px wd-fg-color-gray wd-padding-top-12px">55.5K Tweets</div>
             </div>
-            <div class="wd-flex-container wd-flex-direction-column wd-padding-12px wd-outline">
-                <div class="wd-flex-container wd-flex-justify-space-between wd-flex-align-center">
-                    <div class="wd-font-13px wd-fg-color-gray">Sports &#8226 Trending</div>
-                    <i class="fa fa-ellipsis-h wd-fg-color-gray"></i>
-                </div>
-                <div class="wd-font-15px wd-padding-top-12px wd-fg-color-white wd-font-bold">Joe Rogan</div>
-                <div class="wd-font-13px wd-fg-color-gray wd-padding-top-12px">5,218 Tweets</div>
-            </div>
-            <div class="wd-flex-container wd-padding-12px wd-padding-right-16px wd-flex-justify-space-between wd-outline">
-                <div class="wd-flex-container wd-flex-direction-column">
-                    <div class="wd-font-13px wd-fg-color-white wd-font-bold">
-                        <img alt="NY Times image"
-                             src="https://theme.zdassets.com/theme_assets/968999/d8a347b41db1ddee634e2d67d08798c102ef09ac.jpg"
-                             class="wd-explore-avatar">
-                        The New York Times <i class="fa fa-check-circle" style="color:white"></i>
-                        <span class="wd-fg-color-gray wd-font-normal"> &#8226 Yesterday</span>
+
+            <ul class="list-group wd-font-13px">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">
+                            <div class="wd-fg-color-gray">Web Development</div>
+                            <div><b>ReactJS </b><i class="fa fa-check-circle"></i><span class="wd-fg-color-gray"> - 2h</span></div>
+                            <div><b>React.js is a component based front end library that makes it very
+                                easy to build Single Page Applications or SPAs</b></div>
+                        </div>
+                        <div class="wd-width-120px">
+                            <img alt="Massachusetts image"
+                                 src="https://res.cloudinary.com/practicaldev/image/fetch/s--qo_Wp38Z--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/e0nl7ziy1la7bpwj7rsp.png"
+                                 class="wd-explore-image">
+                        </div>
                     </div>
-                    <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px wd-font-bold">CNN's Cuomo conundrum: A start anchor with a brother in trouble</div>
-                </div>
-                <img alt="CNN image"
-                     src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTRMObAB6Qpedc4ERJp6yDEDmnpM-xorw04B4f7_k3ogTu6HG_S"
-                     class="wd-explore-image">
-            </div>
-            <div class="wd-flex-container wd-padding-12px wd-padding-right-16px wd-flex-justify-space-between wd-outline">
-                <div class="wd-flex-container wd-flex-direction-column">
-                    <div class="wd-font-13px wd-fg-color-gray">COVID-19 &#8226 LIVE</div>
-                    <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px wd-font-bold">COVID-19: News and updates for Massachusetts</div>
-                </div>
-                <img alt="Massachusetts image"
-                     src="https://static01.nyt.com/images/2019/09/07/us/politics/massachusetts-flag-native-americans/massachusetts-flag-native-americans-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
-                     class="wd-explore-image">
-            </div>
-            <div class="wd-flex-container wd-padding-12px wd-padding-right-16px wd-flex-justify-space-between wd-outline">
-                <div class="wd-flex-container wd-flex-direction-column">
-                    <div class="wd-font-13px wd-fg-color-white wd-font-bold">
-                        <img alt="Bloomberg Opinion avatar"
-                             src="https://pbs.twimg.com/profile_images/991778099397320705/6LWXR6MS_400x400.jpg"
-                             class="wd-explore-avatar">
-                        Bloomberg Opinion <i class="fa fa-check-circle" style="color:white"></i>
-                        <span class="wd-fg-color-gray wd-font-normal"> &#8226 Yesterday</span>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">
+                            <div><b>JavaScript </b><i class="fa fa-check-circle"></i><span class="wd-fg-color-gray"> - 2h</span></div>
+                            <div><b>Javascript is a programming language that can run on browsers as well as desktops</b></div>
+                            <div class="wd-fg-color-gray">123K Tuits</div>
+                        </div>
+                        <div class="wd-width-120px">
+                            <img alt="Massachusetts image"
+                                 src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                                 class="wd-explore-image">
+                        </div>
                     </div>
-                    <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px wd-font-bold">Thinking about getting a booster? Read this first</div>
-                </div>
-                <img alt="Booster image"
-                     src="https://media.newyorker.com/photos/614ca8856f5d63f7f467ac61/1:1/w_1560,h_1561,c_limit/Rosner-CelineGounder.jpg"
-                     class="wd-explore-image">
-            </div>
-            <div class="wd-flex-container wd-flex-direction-column wd-padding-12px wd-outline">
-                <div class="wd-flex-container wd-flex-justify-space-between wd-flex-align-center">
-                    <div class="wd-font-13px wd-fg-color-gray">Trending in United States</div>
-                    <i class="fa fa-ellipsis-h wd-fg-color-gray"></i>
-                </div>
-                <div class="wd-font-15px wd-fg-color-white wd-padding-top-12px wd-font-bold">Wonder Bread</div>
-                <div class="wd-font-13px wd-fg-color-gray wd-padding-top-12px">1,259 Tweets</div>
-            </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">
+                            <div class="wd-fg-color-gray">Web Development</div>
+                            <div><b>jQuery</b></div>
+                            <div class="wd-fg-color-gray">123K Tuits</div>
+                        </div>
+                        <div class="wd-width-120px">
+                            <img alt="Massachusetts image"
+                                 src="https://www.zdnet.com/a/img/resize/5ee60f19295247953acbfef1b5b7cc9fc8e49166/2019/04/21/9d791bf2-9b20-476a-bba6-201e622d2a1f/jquery-logo-blue.png?auto=webp&fit=crop&height=1200&width=1200"
+                                 class="wd-explore-image">
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col">
+                            <div class="wd-fg-color-gray">Web Development</div>
+                            <div><b>NodeJS </b><i class="fa fa-check-circle"></i><span class="wd-fg-color-gray"> - 2h</span></div>
+                            <div class="wd-fg-color-gray">123K Tuits</div>
+                        </div>
+                        <div class="wd-width-120px">
+                            <img alt="Massachusetts image"
+                                 src="https://www.secret-source.eu/wp-content/uploads/2017/11/node-js-logo.jpg"
+                                 class="wd-explore-image">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Right sidebar -->
+        <div class="col-4">
+            <ul class="list-group wd-font-13px">
+                <li class="list-group-item wd-padding-top-bottom-6px"><b>Who to follow</b></li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="wd-width-50px">
+                            <img alt="Java logo"
+                                 src="https://dev.java/assets/images/java-logo-vert-blk.png"
+                                 class="wd-explore-avatar">
+                        </div>
+                        <div class="col">
+                            <b>Java </b><i class="fa fa-check-circle"></i>
+                            <div>@Java</div>
+                        </div>
+                        <div class="wd-width-85px wd-flex-container-align-center">
+                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="wd-width-50px">
+                            <img alt="Relativity Space logo"
+                                 src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+                                 class="wd-explore-avatar">
+                        </div>
+                        <div class="col">
+                            <b>Relativity Space </b><i class="fa fa-check-circle"></i>
+                            <div>@relativityspace</div>
+                        </div>
+                        <div class="wd-width-85px wd-flex-container-align-center">
+                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="wd-width-50px">
+                            <img alt="Virgin Galactic logo"
+                                 src="https://cdn.worldvectorlogo.com/logos/virgin-1.svg"
+                                 class="wd-explore-avatar">
+                        </div>
+                        <div class="col">
+                            <b>Virgin Galactic </b><i class="fa fa-check-circle"></i>
+                            <div>@virgingalactic</div>
+                        </div>
+                        <div class="wd-width-85px wd-flex-container-align-center">
+                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="wd-width-50px">
+                            <img alt="NASA logo"
+                                 src="https://seeklogo.com/images/N/nasa-logo-D8FA7F7DE9-seeklogo.com.png"
+                                 class="wd-explore-avatar">
+                        </div>
+                        <div class="col">
+                            <b>NASA </b><i class="fa fa-check-circle"></i>
+                            <div>@NASA</div>
+                        </div>
+                        <div class="wd-width-85px wd-flex-container-align-center">
+                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="wd-width-50px">
+                            <img alt="Tesla logo"
+                                 src="https://i.pinimg.com/originals/62/4d/f0/624df0abe304bb27a03407b47b3317d9.png"
+                                 class="wd-explore-avatar">
+                        </div>
+                        <div class="col">
+                            <b>Tesla </b><i class="fa fa-check-circle"></i>
+                            <div>@Tesla</div>
+                        </div>
+                        <div class="wd-width-85px wd-flex-container-align-center">
+                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
+</div>
 </body>
 </html>
