@@ -16,27 +16,60 @@
 <div class="container pt-3 pb-3">
     <div class="row">
         <!-- Left sidebar -->
-        <div class="col-2">
+        <div class="col-2 col-lg-1 col-xl-2">
             <ul class="list-group pb-2">
                 <li class="list-group-item"><i class="fab fa-twitter"></i></li>
-                <a href="../home.html" class="list-group-item list-group-item-action"><i class="fas fa-home"></i> Home</a>
-                <a href="#" class="list-group-item list-group-item-action active"><i class="fas fa-hashtag"></i> Explore</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-bell"></i> Notifications</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-envelope"></i> Messages</a>
-                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action"><i class="fas fa-bookmark"></i> Bookmarks</a>
-                <a href="#" class="list-group-item list-group-item-action"><i class="fas fa-list"></i> Lists</a>
-                <a href="../profile.html" class="list-group-item list-group-item-action"><i class="fas fa-user"></i> Profile</a>
+                <a href="../home.html" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-home"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Home</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-hashtag"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Explore</div>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <span class="fa-stack wd-fa-half">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
-                    </span> More
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-bell"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Notifications</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-envelope"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Messages</div>
+                    </div>
+                </a>
+                <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-bookmark"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Bookmarks</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-list"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Lists</div>
+                    </div>
+                </a>
+                <a href="../profile.html" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                        <div><i class="fas fa-user"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Profile</div>
+                    </div>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <span class="fa-stack wd-fa-half">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="flex-fill ps-2 d-none d-xl-block">More</div>
+                    </div>
                 </a>
             </ul>
             <button class="btn btn-primary wd-pill">Tuit</button>
         </div>
         <!-- Main content -->
-        <div class="col-6">
+        <div class="col-10 col-lg-7 col-xl-6">
             <!-- Search bar and Explore settings cog-->
             <div class="d-flex align-items-center justify-content-between pb-2 position-relative">
                 <div class="position-absolute">
@@ -68,7 +101,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="sports.html">Sports</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item d-none d-md-block">
                     <a class="nav-link" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
@@ -143,7 +176,7 @@
             </ul>
         </div>
         <!-- Right sidebar -->
-        <div class="col-4">
+        <div class="d-none d-lg-block col-lg-4">
             <ul class="list-group wd-font-13px">
                 <li class="list-group-item top-6 bottom-6"><b>Who to follow</b></li>
                 <li class="list-group-item">
