@@ -76,3 +76,58 @@
 .wd-padding-top-8px {
     padding-top:8px;
 }
+.btn-primary.override-bs {
+    background-color: #1d9af0;
+    border-color: #1d9af0;
+}
+.text-primary.override-bs {
+    color:red;
+}
+.form-control.override-bs {
+    background-color: #eff3f4;
+    border-color: #eff3f4;
+}
+.nav-link.override-bs {
+    color:gray;
+}
+#nav-pane .list-group-item {
+    border-width:0;
+    font-weight:lighter;
+}
+#nav-pane .list-group-item.active {
+    background-color:white;
+    color:black;
+    font-weight:bolder;
+}
+#nav-pane .text-primary.override-bs {
+    color:#1d9af0;
+}
+#nav-pane .text-primary.override-bs {
+    color:#1d9af0;
+}
+#main-content .list-group-item {
+    border-width:0;
+}
+.list-group.override-bs {
+    border-radius:20px;
+}
+#who-to-follow .list-group-item.override-bs-gray {
+    border-width:0;
+    background-color:#f7f9f8;
+}
+#who-to-follow .btn-primary.override-bs {
+    background-color:black;
+    border-color: black;
+}
+wd-height-264px {
+    height: 264px;
+}
+wd-bg-who-to-follow {
+    background-color:#f7f9f8;
+}
+wd-fg-color-blue {
+    color:#1d9af0;
+}
+wd-border-color-blue {
+    border-color: #1d9af0;
+}

@@ -23,6 +23,12 @@
 .wd-fg-color-gray {
     color: rgb(110, 118, 125);
 }
+.wd-fg-color-darkgray2 {
+    color: rgb(34,35,39);
+}
+.wd-fg-color-black {
+    color: black;
+}
 .wd-fg-color-red {
     color: #e2255f;
 }

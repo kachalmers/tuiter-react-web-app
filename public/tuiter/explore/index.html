@@ -16,107 +16,153 @@
 <div class="container pt-3 pb-3">
     <div class="row">
         <!-- Left sidebar -->
-        <div class="col-2 col-lg-1 col-xl-2">
+        <div class="col-2 col-lg-1 col-xl-2"
+             id="nav-pane">
             <ul class="list-group pb-2">
-                <li class="list-group-item"><i class="fab fa-twitter"></i></li>
+                <li class="list-group-item"><i class="fab fa-tumblr-square fs-3 wd-fg-color-blue override-bs"></i></li>
+
                 <a href="../home.html" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-home"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Home</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <div><i class="fas fa-home"></i></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Home</div>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action active">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-hashtag"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Explore</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <div><i class="fas fa-hashtag"></i></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Explore</div>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-bell"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Notifications</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <div><i class="fas fa-bell"></i></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Notifications</div>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-envelope"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Messages</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <div><i class="fas fa-envelope"></i></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Messages</div>
+                        </div>
                     </div>
                 </a>
                 <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-bookmark"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Bookmarks</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <div><i class="fas fa-bell"></i></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Bookmarks</div>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-list"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Lists</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <div><i class="fas fa-list"></i></div>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Lists</div>
+                        </div>
                     </div>
                 </a>
                 <a href="../profile.html" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div><i class="fas fa-user"></i></div><div class="flex-fill ps-2 d-none d-xl-block">Profile</div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">Profile</div>
+                        </div>
                     </div>
                 </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <div class="d-flex align-items-center">
-                        <div>
+                    <div class="row justify-content-start align-items-center">
+                        <div class="col-3">
                             <span class="fa-stack wd-fa-half">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse"></i>
                             </span>
                         </div>
-                        <div class="flex-fill ps-2 d-none d-xl-block">More</div>
+                        <div class="col">
+                            <div class="d-none d-xl-block">More</div>
+                        </div>
                     </div>
                 </a>
             </ul>
-            <button class="btn btn-primary wd-pill">Tuit</button>
+            <button class="btn btn-primary override-bs wd-pill">Tuit</button>
         </div>
         <!-- Main content -->
-        <div class="col-10 col-lg-7 col-xl-6">
+        <span   class="col-10 col-lg-7 col-xl-6"
+                id="main-content">
             <!-- Search bar and Explore settings cog-->
-            <div class="d-flex align-items-center justify-content-between pb-2 position-relative">
+            <div class="d-flex align-items-center justify-content-between ps-4 pe-4 pb-2 position-relative border border-top-0 border-bottom-0">
                 <div class="position-absolute">
                     <!-- Search icon -->
-                    <i class="fas fa-search wd-fg-color-gray ps-3 pb-2"></i>
+                    <i class="fas fa-search wd-fg-color-gray ps-3"></i>
                 </div>
                 <div class="flex-fill pe-4">
                     <!-- Search bar -->
                     <input type="text"
-                           class="form-control wd-pill ps-5"
+                           class="form-control override-bs wd-pill ps-5"
                            placeholder="Search Tuiter">
                 </div>
                 <div>
-                    <a href="explore-settings.html"><i class="fas fa-cog text-primary wd-font-30px"></i></a>
+                    <a href="explore-settings.html"><i class="fas fa-cog wd-font-20px text-dark"></i></a>
                 </div>
             </div>
 
             <!-- Tabs -->
-            <ul class="nav nav-tabs">
+            <ul class="nav nav-tabs border border-top-0 border-bottom-0 d-flex justify-content-around">
                 <li class="nav-item">
-                    <a class="nav-link active" href="for-you.html">For you</a>
+                    <a class="nav-link active border-primary text-dark border-0 border-bottom border-5 rounded fw-bold" href="for-you.html">For you</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="trending.html">Trending</a>
+                    <a class="nav-link override-bs" href="trending.html">Trending</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="news.html">News</a>
+                    <a class="nav-link override-bs" href="news.html">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="sports.html">Sports</a>
+                    <a class="nav-link override-bs" href="sports.html">Sports</a>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                    <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    <a class="nav-link override-bs" href="entertainment.html">Entertainment</a>
                 </li>
             </ul>
 
-            <div class="d-flex position-relative pt-2">
+            <div class="d-flex position-relative pt-1 border border-top-0 border-bottom-0">
                 <img class="wd-width-100pc"
-                     src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
+                     src="https://media.cnn.com/api/v1/images/stellar/prod/230125135516-rublev-djokovic.jpg?c=16x9&q=h_720,w_1280,c_fill"
                      alt="Starship-Mk1-Day.jpg">
-                <div class="position-absolute fixed-bottom px-2 wd-fg-color-white wd-font-30px wd-font-bold">
-                    SpaceX's Starship
+                <div class="position-absolute fixed-bottom px-2 pb-1 wd-fg-color-white wd-font-bold">
+                    <div class="wd-font-13px fw-light">
+                        Tennis Tournament &#xb7; LIVE
+                    </div>
+                    <div class="fs-4">
+                        Australian Open 2023
+                    </div>
                 </div>
             </div>
 
-            <ul class="list-group wd-font-13px">
-                <li class="list-group-item">
+            <div class="border border-top-0 border-bottom-0">
+                <ul class="list-group wd-font-13px">
+                <li class="list-group-item override-bs">
                     <div class="row">
                         <div class="col">
                             <div class="wd-fg-color-gray">Web Development</div>
@@ -131,7 +177,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs">
                     <div class="row">
                         <div class="col">
                             <div><b>JavaScript </b><i class="fa fa-check-circle"></i><span class="wd-fg-color-gray"> - 2h</span></div>
@@ -145,7 +191,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs">
                     <div class="row">
                         <div class="col">
                             <div class="wd-fg-color-gray">Web Development</div>
@@ -159,7 +205,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs">
                     <div class="row">
                         <div class="col">
                             <div class="wd-fg-color-gray">Web Development</div>
@@ -174,12 +220,16 @@
                     </div>
                 </li>
             </ul>
-        </div>
+            </div>
+
+        </span>
         <!-- Right sidebar -->
-        <div class="d-none d-lg-block col-lg-4">
-            <ul class="list-group wd-font-13px">
-                <li class="list-group-item top-6 bottom-6"><b>Who to follow</b></li>
-                <li class="list-group-item">
+        <div class="d-none d-lg-block col-lg-4"
+                id="right-sidebar">
+            <ul class="list-group override-bs wd-font-13px pb-2"
+                id="who-to-follow">
+                <li class="list-group-item override-bs-gray top-6 bottom-6 fw-bolder fs-6">Who to follow</li>
+                <li class="list-group-item override-bs-gray">
                     <div class="row">
                         <div class="wd-width-50px">
                             <img alt="Java logo"
@@ -187,15 +237,15 @@
                                  class="wd-explore-avatar">
                         </div>
                         <div class="col">
-                            <b>Java </b><i class="fa fa-check-circle"></i>
-                            <div>@Java</div>
+                            <b>Java </b><i class="fa fa-check-circle wd-fg-color-blue"></i>
+                            <div class="fw-lighter">@Java</div>
                         </div>
                         <div class="wd-width-85px d-flex align-items-center">
-                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                            <button class="btn btn-primary override-bs btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs-gray">
                     <div class="row">
                         <div class="wd-width-50px">
                             <img alt="Relativity Space logo"
@@ -203,15 +253,15 @@
                                  class="wd-explore-avatar">
                         </div>
                         <div class="col">
-                            <b>Relativity Space </b><i class="fa fa-check-circle"></i>
-                            <div>@relativityspace</div>
+                            <b>Relativity Space </b><i class="fa fa-check-circle wd-fg-color-blue"></i>
+                            <div class="fw-lighter">@relativityspace</div>
                         </div>
                         <div class="wd-width-85px d-flex align-items-center">
-                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                            <button class="btn btn-primary override-bs btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs-gray">
                     <div class="row">
                         <div class="wd-width-50px">
                             <img alt="Virgin Galactic logo"
@@ -219,15 +269,15 @@
                                  class="wd-explore-avatar">
                         </div>
                         <div class="col">
-                            <b>Virgin Galactic </b><i class="fa fa-check-circle"></i>
-                            <div>@virgingalactic</div>
+                            <b>Virgin Galactic </b><i class="fa fa-check-circle wd-fg-color-blue"></i>
+                            <div class="fw-lighter">@virgingalactic</div>
                         </div>
                         <div class="wd-width-85px d-flex align-items-center">
-                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                            <button class="btn btn-primary override-bs btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs-gray">
                     <div class="row">
                         <div class="wd-width-50px">
                             <img alt="NASA logo"
@@ -235,15 +285,15 @@
                                  class="wd-explore-avatar">
                         </div>
                         <div class="col">
-                            <b>NASA </b><i class="fa fa-check-circle"></i>
-                            <div>@NASA</div>
+                            <b>NASA </b><i class="fa fa-check-circle wd-fg-color-blue"></i>
+                            <div class="fw-lighter">@NASA</div>
                         </div>
                         <div class="wd-width-85px d-flex align-items-center">
-                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                            <button class="btn btn-primary override-bs btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item override-bs-gray">
                     <div class="row">
                         <div class="wd-width-50px">
                             <img alt="Tesla logo"
@@ -251,15 +301,29 @@
                                  class="wd-explore-avatar">
                         </div>
                         <div class="col">
-                            <b>Tesla </b><i class="fa fa-check-circle"></i>
-                            <div>@Tesla</div>
+                            <b>Tesla </b><i class="fa fa-check-circle wd-fg-color-blue"></i>
+                            <div class="fw-lighter">@Tesla</div>
                         </div>
                         <div class="wd-width-85px d-flex align-items-center">
-                            <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
+                            <button class="btn btn-primary override-bs btn-sm wd-pill wd-font-13px">Follow</button>
                         </div>
                     </div>
                 </li>
+                <li class="list-group-item override-bs-gray pt-3 pb-3">
+                    <a href="#" class="wd-text-decoration-none wd-fg-color-blue">Show more</a>
+                </li>
             </ul>
+            <div class="d-flex flex-wrap wd-font-13px">
+                <a href="#" class="pe-3 wd-text-decoration-none text-muted">Terms of Service</a>
+                <a href="#" class="pe-3 wd-text-decoration-none text-muted">Privacy Policy</a>
+                <a href="#" class="pe-3 wd-text-decoration-none text-muted">Cookie Policy</a>
+                <a href="#" class="pe-3 wd-text-decoration-none text-muted">Accessibility</a>
+                <a href="#" class="pe-3 wd-text-decoration-none text-muted">Ads info</a>
+                <a href="#" class="pe-3 wd-text-decoration-none text-muted">More <i class="fas fa-ellipsis-h"></i></a>
+            </div>
+            <div class="d-flex flex-wrap wd-font-13px text-muted">
+                &copy; 2023 Tuiter, Inc.
+            </div>
         </div>
     </div>
 </div>
