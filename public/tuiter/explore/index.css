@@ -95,7 +95,7 @@
     font-weight:lighter;
 }
 #nav-pane .list-group-item.active {
-    background-color:white;
+    background-color:#f7f9f8;
     color:black;
     font-weight:bolder;
 }
