@@ -4,14 +4,17 @@
 .wd-fg-color-cyborg-list-bg {
     color: #222222;
 }
-.wd-width-60px {
-    width: 60px;
+.wd-width-50px {
+    width: 50px;
 }
-.wd-width-85px {
-    width: 85px;
+.wd-width-75px {
+    width: 75px;
 }
 .wd-width-120px {
     width: 120px;
+}
+.wd-width-100pc {
+    width:100%;
 }
 .wd-explore-avatar {
     border-radius: 50%;
@@ -28,4 +31,7 @@
 .wd-pill {
     border-radius: 30px;
     width: 100%;
+}
+.wd-font-30px {
+    font-size: 30px;
 }

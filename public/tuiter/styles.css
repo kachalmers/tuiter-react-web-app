@@ -154,3 +154,9 @@ body {
 .wd-max-width-504px {
     width: 504px;
 }
+.wd-fa-half {
+    font-size:0.5em;
+}
+.wd-fg-color-cyborg-list-bg {
+    color: #222222;
+}

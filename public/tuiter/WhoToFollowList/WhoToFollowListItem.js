@@ -2,16 +2,18 @@ const WhoToFollowListItem = (who) => {
     return(`
         <div class="list-group-item">
             <div class="row">
-                <div class="wd-width-60px">
+                <div class="wd-width-50px">
                     <img alt="avatar"
                          src=${who.avatarIcon}
                          class="wd-explore-avatar">
                 </div>
                 <div class="col">
-                    <b>${who.userName} </b><i class="fa fa-check-circle text-primary"></i>
-                    <div class="fw-lighter">@${who.handle}</div>
+                    <div class="text-nowrap">
+                        <b>${who.userName} </b><i class="fa fa-check-circle text-primary"></i>
+                    </div>
+                    <div class="fw-lighter text-nowrap">@${who.handle}</div>
                 </div>
-                <div class="wd-width-85px d-flex align-items-center">
+                <div class="wd-width-75px d-flex align-items-center ps-0">
                     <button class="btn btn-primary btn-sm wd-pill wd-font-13px">Follow</button>
                 </div>
             </div>
