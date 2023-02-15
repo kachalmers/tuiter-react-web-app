@@ -10,10 +10,19 @@
 .wd-width-85px {
     width: 85px;
 }
+.wd-width-120px {
+    width: 120px;
+}
 .wd-explore-avatar {
     border-radius: 50%;
     max-height: 40px;
     max-width: 40px;
+    overflow: hidden;
+}
+.wd-post-summary-image {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
 }
 .wd-pill {
