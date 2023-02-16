@@ -2,7 +2,8 @@ import posts from "./posts.js";
 
 const PostItem = (post) => {
     return(`
-            <div class="row border-bottom border-secondary border-1 pt-2">
+        <div class="list-group-item wd-bg-color-black wd-font-13px">
+            <div class="row">
                 <div class="wd-width-60px">
                     <img alt="avatar"
                          src=${post.avatarIcon}
@@ -12,9 +13,11 @@ const PostItem = (post) => {
                     <div class="d-flex flex-row justify-content-between">
                         <div>
                             <span class="fw-bold text-white">${post.userName} </span><i class="fa fa-check-circle text-primary"></i>
-                            <span class="fw-lighter">@${post.handle} &#183; ${post.time}</span>
+                            <span class="fw-lighter text-secondary">@${post.handle} &#183; ${post.time}</span>
                         </div>
-                        <i class="fas fa-ellipsis-h text-secondary"></i>
+                        <a href="#" class="wd-text-decoration-none text-secondary">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </a>
                     </div>
                     <div class="text-white">
                         ${post.tuitText}
@@ -54,6 +57,7 @@ const PostItem = (post) => {
                     </div>
                 </div>
             </div>
+        </div>
     `);
 }
 $('#wd-post-item').append(`
