@@ -2,9 +2,9 @@ import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return(`
-        <div class="d-flex align-items-center justify-content-between ps-4 pe-4 pb-2 position-relative">
+        <div class="d-flex align-items-center justify-content-between pb-2 position-relative">
             <div class="position-absolute">
-                <i class="fas fa-search wd-fg-color-gray ps-3"></i>
+                <i class="fas fa-search ps-3"></i>
             </div>
             <div class="flex-fill pe-4">
                 <input type="text"
@@ -15,7 +15,7 @@ const ExploreComponent = () => {
                 <a href="explore-settings.html"><i class="fas fa-cog wd-font-30px text-primary"></i></a>
             </div>
         </div>
-        <ul class="nav nav-tabs d-flex justify-content-around">
+        <ul class="nav nav-tabs d-flex">
             <li class="nav-item">
                 <a class="nav-link active" href="for-you.html">For you</a>
             </li>
