@@ -33,7 +33,7 @@ const ExploreComponent = () => {
             </li>
         </ul>
         <div class="d-flex position-relative pt-2">
-            <img class="wd-width-100pc"
+            <img class="wd-width-100pc pb-2"
                  src="https://media.cnn.com/api/v1/images/stellar/prod/230125135516-rublev-djokovic.jpg?c=16x9&q=h_720,w_1280,c_fill"
                  alt="explore_image">
             <div class="position-absolute fixed-bottom px-2 pb-1 text-dark wd-font-bold">
