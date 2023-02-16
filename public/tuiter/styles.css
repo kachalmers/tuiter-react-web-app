@@ -1,3 +1,53 @@
+.wd-fa-half {
+    font-size:0.5em;
+}
+.wd-fg-color-cyborg-list-bg {
+    color: #222222;
+}
+.wd-width-50px {
+    width: 50px;
+}
+.wd-width-60px {
+    width: 60px;
+}
+.wd-width-75px {
+    width: 75px;
+}
+.wd-width-120px {
+    width: 120px;
+}
+.wd-width-100pc {
+    width:100%;
+}
+.wd-max-width-75pc {
+    max-width:75%;
+}
+.wd-avatar-40px {
+    border-radius: 50%;
+    max-height: 40px;
+    max-width: 40px;
+    overflow: hidden;
+}
+.wd-avatar-48px {
+    position: relative;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    overflow: hidden;
+}
+.wd-post-summary-image {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.wd-pill {
+    border-radius: 30px;
+    width: 100%;
+}
+.wd-font-30px {
+    font-size: 30px;
+}
 .wd-bg-color-lightgray {
     background-color: lightgray;
 }
@@ -154,9 +204,11 @@ body {
 .wd-max-width-504px {
     width: 504px;
 }
-.wd-fa-half {
-    font-size:0.5em;
+.wd-tuit-image-fill {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
 }
-.wd-fg-color-cyborg-list-bg {
-    color: #222222;
+.wd-text-decoration-none {
+    text-decoration: none;
 }
