@@ -4,16 +4,18 @@ import "./index.css";
 const ExploreComponent = () => {
     return(
         <>
-            <div className="row">
-                <div className="col-11 position-relative">
-                    <input placeholder="Search Tuiter"
-                           className="form-control rounded-pill ps-5"/>
-                    <i className="bi bi-search position-absolute
-                       wd-nudge-up"></i>
+            <div className="d-flex align-items-center justify-content-between pb-2 position-relative">
+                <div className="position-absolute">
+                    <i className="bi bi-search ps-3"></i>
                 </div>
-                <div className="col-1">
-                    <i className="wd-bottom-4 text-primary float-end bi
-                       bi-gear-fill fs-2 position-relative"></i>
+                <div className="flex-fill pe-4">
+                    <input type="text"
+                           className="form-control rounded-pill ps-5"
+                           placeholder="Search Tuiter"/>
+                </div>
+                <div>
+                    <a href="explore-settings.html"><i
+                        className="bi bi-gear-fill wd-font-30px text-primary"></i></a>
                 </div>
             </div>
             <ul className="nav nav-pills mb-2">
