@@ -8,8 +8,8 @@ const NavigationSidebar = () => {
     const active = paths[2];
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <div className="list-group-item">Tuiter</div>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' || active === '' || active===undefined ?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-house"></i></div>
@@ -32,7 +32,7 @@ const NavigationSidebar = () => {
             <Link to="/" className="list-group-item">
                 Labs
             </Link>
-            <a className={`list-group-item ${active === 'notifications'?'active':''}`}>
+            <Link to="#" className={`list-group-item ${active === 'notifications'?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-bell"></i></div>
@@ -41,8 +41,8 @@ const NavigationSidebar = () => {
                         <div className="d-none d-xl-block">Notifications</div>
                     </div>
                 </div>
-            </a>
-            <a className={`list-group-item ${active === 'messages'?'active':''}`}>
+            </Link>
+            <Link to="#" className={`list-group-item ${active === 'messages'?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-envelope"></i></div>
@@ -51,8 +51,8 @@ const NavigationSidebar = () => {
                         <div className="d-none d-xl-block">Messages</div>
                     </div>
                 </div>
-            </a>
-            <a className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
+            </Link>
+            <Link to="#" className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-bookmark"></i></div>
@@ -61,8 +61,8 @@ const NavigationSidebar = () => {
                         <div className="d-none d-xl-block">Bookmarks</div>
                     </div>
                 </div>
-            </a>
-            <a className={`list-group-item ${active === 'lists'?'active':''}`}>
+            </Link>
+            <Link to="#" className={`list-group-item ${active === 'lists'?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-list-ul"></i></div>
@@ -71,8 +71,8 @@ const NavigationSidebar = () => {
                         <div className="d-none d-xl-block">Lists</div>
                     </div>
                 </div>
-            </a>
-            <a className={`list-group-item ${active === 'profile'?'active':''}`}>
+            </Link>
+            <Link to="#" className={`list-group-item ${active === 'profile'?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-person"></i></div>
@@ -81,8 +81,8 @@ const NavigationSidebar = () => {
                         <div className="d-none d-xl-block">Profile</div>
                     </div>
                 </div>
-            </a>
-            <a className={`list-group-item ${active === 'more'?'active':''}`}>
+            </Link>
+            <Link to="#" className={`list-group-item ${active === 'more'?'active':''}`}>
                 <div className="row justify-content-start align-items-center">
                     <div className="col-3">
                         <div><i className="bi bi-three-dots"></i></div>
@@ -91,7 +91,7 @@ const NavigationSidebar = () => {
                         <div className="d-none d-xl-block">More</div>
                     </div>
                 </div>
-            </a>
+            </Link>
         </div>
     );
 };
