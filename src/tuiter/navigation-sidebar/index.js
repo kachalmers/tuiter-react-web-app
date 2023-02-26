@@ -6,92 +6,81 @@ const NavigationSidebar = () => {
     const {pathname} = useLocation();
     const paths = pathname.split('/')
     const active = paths[2];
+    const screenChoices = [
+        {
+            label: 'Tuiter',
+            link: '/tuiter',
+            activePaths: ['',undefined],
+            iconClassName: ""
+        },
+        {
+            label: 'Home',
+            link: '/tuiter/home',
+            activePaths: ['home'],
+            iconClassName: "bi bi-house"
+        },
+        {
+            label: 'Explore',
+            link: '/tuiter/explore',
+            activePaths: ['explore'],
+            iconClassName: "bi bi-hash"
+        },
+        {
+            label: 'Notifications',
+            link: '#',
+            activePaths: ['notifications'],
+            iconClassName: "bi bi-bell"
+        },
+        {
+            label: 'Messages',
+            link: '#',
+            activePaths: ['messages'],
+            iconClassName: "bi bi-envelope"
+        },
+        {
+            label: 'Bookmarks',
+            link: '#',
+            activePaths: ['bookmarks'],
+            iconClassName: "bi bi-bookmark"
+        },
+        {
+            label: 'Lists',
+            link: '#',
+            activePaths: ['lists'],
+            iconClassName: "bi bi-list-ul"
+        },
+        {
+            label: 'Profile',
+            link: '#',
+            activePaths: ['profile'],
+            iconClassName: "bi bi-person"
+        },
+        {
+            label: 'More',
+            link: '#',
+            activePaths: ['more'],
+            iconClassName: "bi bi-three-dots"
+        }
+    ]
     return (
         <div className="list-group">
-            <div className="list-group-item">Tuiter</div>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' || active === '' || active===undefined ?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-house"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Home</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-hash"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Explore</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="/" className="list-group-item">
-                Labs
-            </Link>
-            <Link to="#" className={`list-group-item ${active === 'notifications'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-bell"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Notifications</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item ${active === 'messages'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-envelope"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Messages</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item ${active === 'bookmarks'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-bookmark"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Bookmarks</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item ${active === 'lists'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-list-ul"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Lists</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item ${active === 'profile'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-person"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">Profile</div>
-                    </div>
-                </div>
-            </Link>
-            <Link to="#" className={`list-group-item ${active === 'more'?'active':''}`}>
-                <div className="row justify-content-start align-items-center">
-                    <div className="col-3">
-                        <div><i className="bi bi-three-dots"></i></div>
-                    </div>
-                    <div className="col">
-                        <div className="d-none d-xl-block">More</div>
-                    </div>
-                </div>
-            </Link>
+            {
+                screenChoices.map(screenChoice =>
+                    <Link to={screenChoice.link} className={`list-group-item ${screenChoice.activePaths.includes(active)?'active':''}`}>
+                        <div className="row justify-content-start align-items-center">
+                            {
+                                screenChoice.iconClassName !== '' ?
+                                    <div className="col-3">
+                                        <div><i className={screenChoice.iconClassName}></i></div>
+                                    </div> : ''
+                            }
+                            <div className="col">
+                                <div className="d-none d-xl-block">{screenChoice.label}</div>
+                            </div>
+                        </div>
+                    </Link>
+                )
+            }
         </div>
     );
 };
