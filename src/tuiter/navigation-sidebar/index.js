@@ -11,7 +11,7 @@ const NavigationSidebar = () => {
             label: 'Tuiter',
             link: '/tuiter',
             activePaths: ['',undefined],
-            iconClassName: ""
+            iconClassName: "bi bi-twitter"
         },
         {
             label: 'Home',
