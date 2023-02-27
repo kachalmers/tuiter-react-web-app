@@ -60,6 +60,12 @@ const NavigationSidebar = () => {
             link: '#',
             activePaths: ['more'],
             iconClassName: "bi bi-three-dots"
+        },
+        {
+            label: 'Labs',
+            link: '/',
+            activePaths: [],
+            iconClassName: "bi bi-pc-display-horizontal text-warning"
         }
     ]
     return (
