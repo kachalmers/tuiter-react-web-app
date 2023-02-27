@@ -1,6 +1,5 @@
 import React from "react";
 import './index.css';
-import {Link} from "react-router-dom";
 
 const handleOrWord = (hOrW) => {
     if (hOrW.charAt(0)==='@') {
