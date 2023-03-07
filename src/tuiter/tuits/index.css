@@ -1,0 +1,217 @@
+.wd-fa-half {
+    font-size:0.5em;
+}
+.wd-fg-color-cyborg-list-bg {
+    color: #222222;
+}
+.wd-width-50px {
+    width: 50px;
+}
+.wd-width-60px {
+    column-width: 60px;
+}
+.wd-width-75px {
+    width: 75px;
+}
+.wd-width-120px {
+    width: 120px;
+}
+.wd-width-100pc {
+    width:100%;
+}
+.wd-max-width-75pc {
+    max-width:75%;
+}
+.wd-avatar-40px {
+    border-radius: 50%;
+    max-height: 40px;
+    max-width: 40px;
+    overflow: hidden;
+}
+.wd-avatar-48px {
+    position: relative;
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    overflow: hidden;
+}
+.wd-post-summary-image {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.wd-pill {
+    border-radius: 30px;
+    width: 100%;
+}
+.wd-font-30px {
+    font-size: 30px;
+}
+.wd-bg-color-lightgray {
+    background-color: lightgray;
+}
+.wd-bg-color-gray {
+    background-color: rgb(110, 118, 125);
+}
+.wd-bg-color-darkgray1 {
+    background-color: rgb(47, 51, 54);
+}
+.wd-bg-color-darkgray2 {
+    background-color: rgb(34,35,39);
+}
+.wd-bg-color-darkgray3 {
+    background-color: rgb(23,24,30);
+}
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-fg-color-white {
+    color: white;
+}
+.wd-fg-color-gray {
+    color: rgb(110, 118, 125);
+}
+.wd-fg-color-darkgray2 {
+    color: rgb(34,35,39);
+}
+.wd-fg-color-black {
+    color: black;
+}
+.wd-fg-color-red {
+    color: #e2255f;
+}
+.wd-fg-color-blue {
+    color: rgb(29, 161, 242);
+}
+
+.wd-font-bold {
+    font-weight: bold;
+}
+.wd-font-lighter {
+    font-weight: lighter;
+}
+.wd-font-normal {
+    font-weight: normal;
+}
+.wd-font-13px {
+    font-size: 13px;
+}
+.wd-font-15px {
+    font-size: 15px;
+}
+.wd-font-20px {
+    font-size: 20px;
+}
+.wd-font-30px {
+    font-size: 30px;
+}
+.wd-font-50px {
+    font-size: 50px;
+}
+
+.wd-flex-container {
+    display: flex;
+}
+.wd-flex-direction-column {
+    flex-direction: column;
+}
+.wd-flex-justify-center {
+    justify-content: center;
+}
+.wd-flex-justify-space-between {
+    justify-content: space-between;
+}
+.wd-flex-justify-space-around {
+    justify-content: space-around;
+}
+.wd-flex-align-center {
+    align-items: center;
+}
+.wd-flex-container-stretch {
+    flex-basis: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, serif;
+}
+
+.wd-padding-12px {
+    padding: 12px;
+}
+.wd-padding-16px {
+    padding: 16px;
+}
+.wd-padding-left-12px {
+    padding-left: 12px;
+}
+.wd-padding-left-16px {
+    padding-left: 16px;
+}
+.wd-padding-left-60px {
+    padding-left: 60px;
+}
+.wd-padding-top-12px {
+    padding-top: 12px;
+}
+.wd-padding-right-12px {
+    padding-right: 12px;
+}
+.wd-padding-right-16px {
+    padding-right: 16px;
+}
+.wd-padding-bottom-12px {
+    padding-bottom: 12px;
+}
+
+.wd-tuit-image {
+    width: 504px;
+    height: 264px;
+    overflow: hidden;
+}
+.wd-icon-hyperlink {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+.wd-outline {
+    outline: rgb(110, 118, 125) solid 1px;
+}
+.wd-border-rounded-20px {
+    border-radius: 20px;
+}
+.wd-border-rounded-top-10px {
+    border-radius: 10px 10px 0 0;
+}
+.wd-border-rounded-bottom-10px {
+    border-radius: 0 0 10px 10px;
+}
+.wd-border-bottom-blue {
+    border-bottom: rgb(29, 161, 242) solid 5px;
+}
+.wd-border-darkgray {
+    border-color: rgb(47, 51, 54);
+}
+.wd-border-darkgray2 {
+    border-color: rgb(34,35,39);
+}
+
+.wd-max-width-506px {
+    max-width: 506px;
+}
+.wd-max-width-504px {
+    width: 504px;
+}
+.wd-max-width-px {
+    max-width:120px;
+}
+.wd-tuit-image-fill {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.wd-text-decoration-none {
+    text-decoration: none;
+}

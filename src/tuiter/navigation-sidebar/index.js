@@ -10,13 +10,13 @@ const NavigationSidebar = () => {
         {
             label: 'Tuiter',
             link: '/tuiter',
-            activePaths: ['',undefined],
+            activePaths: [],
             iconClassName: "bi bi-twitter"
         },
         {
             label: 'Home',
             link: '/tuiter/home',
-            activePaths: ['home'],
+            activePaths: ['home','',undefined],
             iconClassName: "bi bi-house"
         },
         {
