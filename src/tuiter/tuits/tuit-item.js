@@ -1,6 +1,8 @@
 import React from "react";
 import './index.css';
 import TuitStats from "./tuit-stats"
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./tuits-reducer";
 
 const TuitItem = (
     {
@@ -19,6 +21,10 @@ const TuitItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
     return(
         <div className="list-group-item">
             <div className="d-flex">
@@ -27,7 +33,9 @@ const TuitItem = (
                          src={`/images/${post.image}`}
                          className="wd-avatar-48px"/>
                 </div>
-                <div className="ps-3">
+                <div className="ps-3 w-100">
+                    <i className="bi bi-x-lg float-end"
+                       onClick={() => deleteTuitHandler(post._id)}></i>
                     <div>
                         <span className="fw-bold">{post.userName} </span>
                         <i className="bi bi-check-circle-fill text-primary"></i>

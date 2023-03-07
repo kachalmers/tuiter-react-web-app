@@ -1,4 +1,7 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {likeToggle} from "./tuits-reducer";
+
 const TuitStats = (
     {
         post = {
@@ -16,6 +19,10 @@ const TuitStats = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const toggleLikeHandler = (id) => {
+        dispatch(likeToggle(id));
+    }
     return (
         <div className="d-flex justify-content-between pt-2">
             <a href="#" className="wd-text-decoration-none text-secondary">
@@ -26,10 +33,13 @@ const TuitStats = (
                 <i className="bi bi-repeat"></i><span
                 className="ps-2">{post.retuits}</span>
             </a>
-            <a href="#" className="wd-text-decoration-none text-secondary">
+            <span
+                className="wd-text-decoration-none text-secondary"
+                onClick={()=>toggleLikeHandler(post._id)}
+            >
                 <i className={`${post.liked? "bi bi-heart-fill wd-fg-color-red":"bi bi-heart"}`}></i><span
                 className="ps-2">{post.likes}</span>
-            </a>
+            </span>
             <a href="#" className="wd-text-decoration-none text-secondary">
                 <i className="bi bi-share"></i><span className="ps-2"></span>
             </a>
