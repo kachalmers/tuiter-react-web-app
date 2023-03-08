@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 
 const ProfileComponent = () => {
     let profile = useSelector((state) => state.profile);
-    console.log(profile.firstName);
     return(
         <>
             <div className="d-flex align-items-center">
