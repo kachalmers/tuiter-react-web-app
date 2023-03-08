@@ -23,8 +23,6 @@ const tuitsSlice = createSlice({
         reducers: {
             likeToggle(state, action) {
                 const post = state.find((post) => post._id === action.payload)
-                console.log(action.payload);
-                console.log(post.liked);
                 if (post.liked) {
                     post.liked = false   // unlike
                     post.likes--;

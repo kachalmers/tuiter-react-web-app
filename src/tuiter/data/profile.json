@@ -1,0 +1,14 @@
+{
+  "firstName": "Dana",
+  "lastName": "Scully",
+  "handle": "@dscully",
+  "profilePicture": "scully.png",
+  "bannerPicture": "xfiles_banner.png",
+  "bio": "FBI Special Agent and medical doctor with a background in hard science. Placed in the X-Files unit to monitor and debunk Fox Mulder's work.",
+  "website": "x-files.fandom.com/wiki/Dana_Scully",
+  "location": "Annapolis, MD",
+  "dateOfBirth": "2/23/1964",
+  "dateJoined": "9/1993",
+  "followingCount": 340,
+  "followersCount": 223
+}

@@ -51,8 +51,8 @@ const NavigationSidebar = () => {
         },
         {
             label: 'Profile',
-            link: '#',
-            activePaths: ['profile'],
+            link: '/tuiter/profile',
+            activePaths: ['profile','edit-profile'],
             iconClassName: "bi bi-person"
         },
         {
