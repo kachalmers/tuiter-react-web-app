@@ -7,14 +7,18 @@ const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
-        const newTuit = {
-            tuit: whatsHappening,
-            userName: profile.firstName+' '+profile.lastName,
-            handle: profile.handle,
-            image: profile.profilePicture
+        if (whatsHappening === '') {
+            alert("Cannot post empty tuit!")
+        } else {
+            const newTuit = {
+                tuit: whatsHappening,
+                userName: profile.firstName+' '+profile.lastName,
+                handle: profile.handle,
+                image: profile.profilePicture
+            }
+            dispatch(createTuit(newTuit));
+            setWhatsHappening('');
         }
-        dispatch(createTuit(newTuit));
-        setWhatsHappening('');
     }
     return (
         <div className="row">
