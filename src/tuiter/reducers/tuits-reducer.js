@@ -40,14 +40,16 @@ const tuitsSlice = createSlice({
 
             },
             deleteTuit(state, action) {
-                console.log(action.payload)
-                console.log(state);
                 const index = state
                     .findIndex(tuit =>
                                    tuit._id === action.payload);
                 state.splice(index, 1);
+            },
+            updateTuit(state, action) {
+                const post = state.find((post) => post._id === action.payload._id);
+                post.tuit = action.payload.tuit;
             }
         }
     });
-export const {likeToggle,createTuit,deleteTuit} = tuitsSlice.actions;
+export const {likeToggle,createTuit,deleteTuit,updateTuit} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
