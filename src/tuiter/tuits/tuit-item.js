@@ -2,20 +2,21 @@ import React, {useState} from "react";
 import './index.css';
 import TuitStats from "./tuit-stats"
 import {useDispatch} from "react-redux";
-import {deleteTuit,updateTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk,updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
         post = {
-            "topic": "Space",
-            "userName": "SpaceX",
+            "topic": "Default topic",
+            "userName": "Default username",
             "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+            "title": "Default title",
             "image": "tesla.png",
-            "liked": true,
-            "replies": 123,
-            "retuits": 432,
-            "likes": 2345,
+            "liked": false,
+            "replies": 0,
+            "retuits": 0,
+            "likes": 0,
+            "dislikes": 0,
             "handle": "@defaultHandle",
             "tuit": "Default tuit"
         }
@@ -26,15 +27,18 @@ const TuitItem = (
 
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
+
     const updateTuitHandler = (post) => {
-        const newTuit = {
-            ...post,
-            tuit: tuit
-        }
-        dispatch(updateTuit(newTuit));
-        setTuit('');
+        dispatch(
+            updateTuitThunk(
+                {
+                    ...post,
+                    tuit: tuit
+                }
+            )
+        )
         setEditingTuit(false);
     }
 
