@@ -57,7 +57,7 @@ const TuitItem = (
                 <div className="ps-3 w-100">
                     <div className="d-flex justify-content-between">
                         <div>
-                            <span className="fw-bold">{post.userName} </span>
+                            <span className="fw-bold">{post.username} </span>
                             <i className="bi bi-check-circle-fill text-primary"></i>
                             <span className="text-secondary"> {post.handle} &#183; {post.time}</span>
                         </div>

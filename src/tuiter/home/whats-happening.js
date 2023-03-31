@@ -12,7 +12,7 @@ const WhatsHappening = () => {
         } else {
             const newTuit = {
                 tuit: whatsHappening,
-                userName: profile.firstName+' '+profile.lastName,
+                username: profile.firstName+' '+profile.lastName,
                 handle: profile.handle,
                 image: profile.profilePicture
             }
