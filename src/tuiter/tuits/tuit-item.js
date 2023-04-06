@@ -46,6 +46,14 @@ const TuitItem = (
         setEditingTuit(true);
         setTuit(originalTuit);
     }
+
+    const timeDisplay = () => {
+        const now = (new Date()).getTime();
+        const posted = (new Date(post.time)).getTime();
+        const age = now - posted;
+        return Math.round(age/1000/60/60) + 'h';
+    }
+
     return(
         <div className="list-group-item">
             <div className="d-flex">
@@ -59,7 +67,7 @@ const TuitItem = (
                         <div>
                             <span className="fw-bold">{post.username} </span>
                             <i className="bi bi-check-circle-fill text-primary"></i>
-                            <span className="text-secondary"> {post.handle} &#183; {post.time}</span>
+                            <span className="text-secondary"> {post.handle} &#183; {timeDisplay()}</span>
                         </div>
                         <div>
                             {
